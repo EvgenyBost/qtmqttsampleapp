@@ -21,7 +21,7 @@ Window {
             Layout.fillWidth: true
 
             Label { text: "Address:" }
-            TextField { id: hostField; text: "test.mosquitto.org"; Layout.fillWidth: true; }
+            TextField { id: hostField; text: ""; Layout.fillWidth: true; }
 
             Label { text: "Port:" }
             SpinBox { id: portField; from: 1; to: 65535; value: 1883; editable: true; Layout.fillWidth: true ; stepSize: 1;
@@ -42,7 +42,7 @@ Window {
             TextField { id: passField; echoMode: TextInput.Password; Layout.fillWidth: true }
 
             Label { text: "Topic:" }
-            TextField { id: topicField; text: "boss/test/topic"; Layout.fillWidth: true }
+            TextField { id: topicField; text: ""; Layout.fillWidth: true }
 
             Label { text: "Payload:"; Layout.alignment: Qt.AlignTop }
             TextArea {
